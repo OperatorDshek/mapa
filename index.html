@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapa IMSS Veracruz Sur</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <img src="logo/logo.png" alt="Logo IMSS" class="logo" />
+  
+    <div class="titulo">
+      <h1>Mapa IMSS Veracruz Sur</h1>
+      <p>Red hospitalaria regional</p>
+    </div>
+  </header>
+  <main>
+    <section id="map-wrapper">
+      <div id="map-container">
+        <img id="mapa-completo" src="mapa/veracruz-sur.png" alt="Mapa IMSS Veracruz Sur" />
+        <img class="icono-hospital" src="iconos/cruz-roja.svg" data-hospital="orizaba" style="top: 67%; left: 33%;">
+        <img class="icono-hospital" src="iconos/cruz-roja.svg" data-hospital="cordoba" style="top: 64%; left: 36%;">
+        <img class="icono-hospital" src="iconos/cruz-roja.svg" data-hospital="potrero" style="top: 66.2%; left: 39%;">
+        <img class="icono-hospital" src="iconos/cruz-roja.svg" data-hospital="omealca" style="top: 65.5%; left: 37%;">
+        <img class="icono-hospital" src="iconos/cruz-roja.svg" data-hospital="cosolapa" style="top: 68.3%; left: 35%;">
+        <img class="icono-hospital" src="iconos/cruz-roja.svg" data-hospital="tierrablanca" style="top: 75.6%; left: 49%;">
+        <img class="icono-hospital" src="iconos/cruz-roja.svg" data-hospital="cosamaloapan" style="top: 76%; left: 55%;">
+        <img class="icono-hospital" src="iconos/cruz-roja.svg" data-hospital="minatitlan" style="top: 83%; left: 76%;">
+        <img class="icono-hospital" src="iconos/cruz-roja.svg" data-hospital="coatzacoalcos" style="top: 78%; left: 79%;">
+      </div>
+    </section>
+
+    <div id="tooltip" class="tooltip hidden">
+      <img id="tooltip-img" src="" alt="Imagen hospital">
+      <div id="tooltip-info"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Instituto Mexicano del Seguro Social. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
